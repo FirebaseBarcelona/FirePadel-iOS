@@ -1,12 +1,12 @@
 import UIKit
 
 class SignInController<View: SignInUI>: UIViewController where View: UIView {
-    var mainView: View
+    private let mainView: View
     
     // MARK: - Initialization
     
-    init(view: View) {
-        mainView = view
+    init() {
+        mainView = View()
         super.init(nibName: nil, bundle: nil)
     }
     
