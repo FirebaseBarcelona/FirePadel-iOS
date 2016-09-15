@@ -24,12 +24,12 @@
 /* Begin PBXFileReference section */
 		002255EDBD1C4E870D43C15A /* Pods-FirePadel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirePadel.release.xcconfig"; path = "Pods/Target Support Files/Pods-FirePadel/Pods-FirePadel.release.xcconfig"; sourceTree = "<group>"; };
 		0908AFAF1D8197FB00AA8EA0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		09ABC9721D87922B001BC224 /* FirePadel-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FirePadel-Bridging-Header.h"; sourceTree = "<group>"; };
 		09C92CCC1D81763900086EEC /* FirePadel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirePadel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09C92CCF1D81763900086EEC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		09C92CD61D81763900086EEC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		09C92CD91D81763900086EEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		09C92CDB1D81763900086EEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09E798A91D8A84E200E3CD62 /* FirePadel.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FirePadel.entitlements; sourceTree = "<group>"; };
 		09E887A41D86977700D3B1C4 /* SignInController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInController.swift; sourceTree = "<group>"; };
 		09E887A61D8697B900D3B1C4 /* SignInView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		09E887A81D86982D00D3B1C4 /* SignInUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInUI.swift; sourceTree = "<group>"; };
@@ -58,17 +58,8 @@
 			children = (
 				09E887A21D86973100D3B1C4 /* UI */,
 				09E887AD1D869BC700D3B1C4 /* Domain */,
-				09ABC9711D878C7B001BC224 /* Other */,
 			);
 			path = Source;
-			sourceTree = "<group>";
-		};
-		09ABC9711D878C7B001BC224 /* Other */ = {
-			isa = PBXGroup;
-			children = (
-				09ABC9721D87922B001BC224 /* FirePadel-Bridging-Header.h */,
-			);
-			path = Other;
 			sourceTree = "<group>";
 		};
 		09C92CC31D81763900086EEC = {
@@ -102,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				09C92CD61D81763900086EEC /* Assets.xcassets */,
+				09E798A91D8A84E200E3CD62 /* FirePadel.entitlements */,
 				0908AFAF1D8197FB00AA8EA0 /* GoogleService-Info.plist */,
 				09C92CDB1D81763900086EEC /* Info.plist */,
 				09C92CD81D81763900086EEC /* LaunchScreen.storyboard */,
@@ -202,6 +194,11 @@
 						DevelopmentTeam = DE2URN8PKZ;
 						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -417,13 +414,13 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = FirePadel/Resources/FirePadel.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = DE2URN8PKZ;
 				INFOPLIST_FILE = FirePadel/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.firebasebarcelona.FirePadel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "FirePadel/Source/Other//FirePadel-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
@@ -436,13 +433,13 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = FirePadel/Resources/FirePadel.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = DE2URN8PKZ;
 				INFOPLIST_FILE = FirePadel/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.firebasebarcelona.FirePadel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "FirePadel/Source/Other//FirePadel-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
