@@ -18,6 +18,11 @@
 		0910EE211D901DFC00F3412B /* IsUserSignedInUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0910EE1E1D901DFC00F3412B /* IsUserSignedInUseCase.swift */; };
 		0910EE221D901DFC00F3412B /* SignInUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0910EE1F1D901DFC00F3412B /* SignInUseCase.swift */; };
 		0910EE231D901DFC00F3412B /* UseCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0910EE201D901DFC00F3412B /* UseCases.swift */; };
+		0910EE261D90241F00F3412B /* CourtsListWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0910EE251D90241F00F3412B /* CourtsListWireframe.swift */; };
+		0910EE281D90242B00F3412B /* CourtsListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0910EE271D90242B00F3412B /* CourtsListPresenter.swift */; };
+		0910EE2A1D90243400F3412B /* CourtsListUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0910EE291D90243400F3412B /* CourtsListUI.swift */; };
+		0910EE2C1D90243F00F3412B /* CourtsListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0910EE2B1D90243F00F3412B /* CourtsListController.swift */; };
+		0910EE2E1D90244B00F3412B /* CourtsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0910EE2D1D90244B00F3412B /* CourtsListView.swift */; };
 		09C92CD01D81763900086EEC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C92CCF1D81763900086EEC /* AppDelegate.swift */; };
 		09C92CD71D81763900086EEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09C92CD61D81763900086EEC /* Assets.xcassets */; };
 		09C92CDA1D81763900086EEC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09C92CD81D81763900086EEC /* LaunchScreen.storyboard */; };
@@ -43,6 +48,11 @@
 		0910EE1E1D901DFC00F3412B /* IsUserSignedInUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IsUserSignedInUseCase.swift; sourceTree = "<group>"; };
 		0910EE1F1D901DFC00F3412B /* SignInUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInUseCase.swift; sourceTree = "<group>"; };
 		0910EE201D901DFC00F3412B /* UseCases.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UseCases.swift; sourceTree = "<group>"; };
+		0910EE251D90241F00F3412B /* CourtsListWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourtsListWireframe.swift; sourceTree = "<group>"; };
+		0910EE271D90242B00F3412B /* CourtsListPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourtsListPresenter.swift; sourceTree = "<group>"; };
+		0910EE291D90243400F3412B /* CourtsListUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourtsListUI.swift; sourceTree = "<group>"; };
+		0910EE2B1D90243F00F3412B /* CourtsListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourtsListController.swift; sourceTree = "<group>"; };
+		0910EE2D1D90244B00F3412B /* CourtsListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourtsListView.swift; sourceTree = "<group>"; };
 		09C92CCC1D81763900086EEC /* FirePadel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirePadel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09C92CCF1D81763900086EEC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		09C92CD61D81763900086EEC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -71,6 +81,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0910EE241D9023F200F3412B /* Courts List */ = {
+			isa = PBXGroup;
+			children = (
+				0910EE251D90241F00F3412B /* CourtsListWireframe.swift */,
+				0910EE271D90242B00F3412B /* CourtsListPresenter.swift */,
+				0910EE291D90243400F3412B /* CourtsListUI.swift */,
+				0910EE2B1D90243F00F3412B /* CourtsListController.swift */,
+				0910EE2D1D90244B00F3412B /* CourtsListView.swift */,
+			);
+			path = "Courts List";
+			sourceTree = "<group>";
+		};
 		095337021D8F6F99004260CD /* Data */ = {
 			isa = PBXGroup;
 			children = (
@@ -155,6 +177,7 @@
 				09C92CCF1D81763900086EEC /* AppDelegate.swift */,
 				09E887AB1D869B1E00D3B1C4 /* MainWireframe.swift */,
 				09E887A31D86974E00D3B1C4 /* Sign In */,
+				0910EE241D9023F200F3412B /* Courts List */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -338,17 +361,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				0910EE191D901DDD00F3412B /* SignInService.swift in Sources */,
+				0910EE281D90242B00F3412B /* CourtsListPresenter.swift in Sources */,
+				0910EE2C1D90243F00F3412B /* CourtsListController.swift in Sources */,
 				09D2E1D31D900F5000A21F69 /* SignInPresenter.swift in Sources */,
 				0910EE231D901DFC00F3412B /* UseCases.swift in Sources */,
 				09E887AC1D869B1E00D3B1C4 /* MainWireframe.swift in Sources */,
 				0910EE161D901DDD00F3412B /* FirebaseService.swift in Sources */,
 				0910EE211D901DFC00F3412B /* IsUserSignedInUseCase.swift in Sources */,
+				0910EE261D90241F00F3412B /* CourtsListWireframe.swift in Sources */,
 				09E887B41D86A61000D3B1C4 /* SignInWireframe.swift in Sources */,
 				0910EE1D1D901DF100F3412B /* User.swift in Sources */,
 				09E887A71D8697B900D3B1C4 /* SignInView.swift in Sources */,
+				0910EE2A1D90243400F3412B /* CourtsListUI.swift in Sources */,
 				09C92CD01D81763900086EEC /* AppDelegate.swift in Sources */,
 				09E887A51D86977700D3B1C4 /* SignInController.swift in Sources */,
 				0910EE151D901DDD00F3412B /* AuthenticationService.swift in Sources */,
+				0910EE2E1D90244B00F3412B /* CourtsListView.swift in Sources */,
 				09E887A91D86982D00D3B1C4 /* SignInUI.swift in Sources */,
 				0910EE181D901DDD00F3412B /* GoogleAuthenticationService.swift in Sources */,
 				0910EE171D901DDD00F3412B /* FirebaseSignInService.swift in Sources */,
