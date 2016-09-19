@@ -17,7 +17,7 @@ final class AvatarView: UIView {
     init(size: Size, url: URL) {
         self.size = size
         self.url = url
-        super.init(frame: .zero)
+        super.init(frame: CGRect(x: 0, y: 0, width: size.rawValue, height: size.rawValue))
         setup()
     }
     
@@ -30,16 +30,17 @@ final class AvatarView: UIView {
     private func setup() {
         addSubviews()
         roundCourners()
-        loadImage()
         setupConstraints()
+        loadImage()
     }
     
     private func addSubviews() {
         addSubview(imageView)
+        imageView.frame = bounds
     }
     
     private func roundCourners() {
-        layer.cornerRadius = size.rawValue
+        layer.cornerRadius = size.rawValue / 2
         layer.masksToBounds = true
     }
     
@@ -54,10 +55,6 @@ final class AvatarView: UIView {
         imageView.centerYAnchor.constraint(equalTo: centerYAnchor).isActive = true
     }
     
-    override class var requiresConstraintBasedLayout: Bool {
-        return true
-    }
-    
     override var intrinsicContentSize: CGSize {
         return CGSize(width: size.rawValue, height: size.rawValue)
     }
@@ -65,7 +62,7 @@ final class AvatarView: UIView {
     // MARK: Inner types
     
     enum Size: CGFloat {
-        case Standard = 44
-        case Small = 30
+        case standard = 44
+        case small = 30
     }
 }
