@@ -4,7 +4,7 @@ import RxSwift
 
 final class FirebaseSignInService: SignInService {
     func isUserSignedIn() -> Bool {
-        return false
+        return FIRAuth.auth()?.currentUser != nil
     }
     
     func signIn(with authentication: Authentication) -> Observable<User> {
