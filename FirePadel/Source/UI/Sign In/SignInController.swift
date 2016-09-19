@@ -1,13 +1,15 @@
 import UIKit
+import GoogleSignIn
 
-class SignInController<View: SignInUI>: UIViewController where View: UIView {
-    private let mainView: View
+class SignInController: UIViewController, SignInUI, GIDSignInUIDelegate {
+    
+    weak var delegate: SignInUIDelegate?
     
     // MARK: - Initialization
     
     init() {
-        mainView = View()
         super.init(nibName: nil, bundle: nil)
+        GIDSignIn.sharedInstance().uiDelegate = self
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -17,6 +19,10 @@ class SignInController<View: SignInUI>: UIViewController where View: UIView {
     // MARK: - View Lifecycle
     
     override func loadView() {
-        view = mainView
+        view = SignInView()
+    }
+    
+    override func viewDidLoad() {
+        delegate?.viewLoaded()
     }
 }

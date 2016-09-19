@@ -3,10 +3,11 @@ import UIKit
 final class MainWireframe {
     private let isUserSignedIn: UseCase.IsUserSignedIn
     private let window = UIWindow(frame: UIScreen.main.bounds)
-    private let signInWireframe = SignInWireframe()
+    private var signInWireframe: SignInWireframe?
+    let googleAuthenticationService = GoogleAuthenticationService()
     
-    init(isUserSignedIn: @escaping UseCase.IsUserSignedIn = IsUserSignedIn()) {
-        self.isUserSignedIn = isUserSignedIn
+    init() {
+        isUserSignedIn = IsUserSignedInUseCase(signInService: FirebaseSignInService())
     }
     
     func setupKeyWindow() -> UIWindow {
@@ -20,6 +21,8 @@ final class MainWireframe {
         if isUserSignedIn() {
             return UIViewController()
         } else {
+            let signInWireframe = SignInWireframe(authenticationService: googleAuthenticationService)
+            self.signInWireframe = signInWireframe
             return signInWireframe.rootController
         }
     }
