@@ -62,7 +62,7 @@ final class AvatarView: UIView {
     // MARK: Inner types
     
     enum Size: CGFloat {
-        case standard = 44
+        case standard = 40
         case small = 30
     }
 }
