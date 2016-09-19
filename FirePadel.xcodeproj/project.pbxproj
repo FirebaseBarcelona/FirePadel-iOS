@@ -23,6 +23,7 @@
 		0910EE2A1D90243400F3412B /* CourtsListUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0910EE291D90243400F3412B /* CourtsListUI.swift */; };
 		0910EE2C1D90243F00F3412B /* CourtsListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0910EE2B1D90243F00F3412B /* CourtsListController.swift */; };
 		0910EE2E1D90244B00F3412B /* CourtsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0910EE2D1D90244B00F3412B /* CourtsListView.swift */; };
+		0910EE311D904D7000F3412B /* AvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0910EE301D904D7000F3412B /* AvatarView.swift */; };
 		09C92CD01D81763900086EEC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C92CCF1D81763900086EEC /* AppDelegate.swift */; };
 		09C92CD71D81763900086EEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09C92CD61D81763900086EEC /* Assets.xcassets */; };
 		09C92CDA1D81763900086EEC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09C92CD81D81763900086EEC /* LaunchScreen.storyboard */; };
@@ -53,6 +54,7 @@
 		0910EE291D90243400F3412B /* CourtsListUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourtsListUI.swift; sourceTree = "<group>"; };
 		0910EE2B1D90243F00F3412B /* CourtsListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourtsListController.swift; sourceTree = "<group>"; };
 		0910EE2D1D90244B00F3412B /* CourtsListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourtsListView.swift; sourceTree = "<group>"; };
+		0910EE301D904D7000F3412B /* AvatarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvatarView.swift; sourceTree = "<group>"; };
 		09C92CCC1D81763900086EEC /* FirePadel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirePadel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09C92CCF1D81763900086EEC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		09C92CD61D81763900086EEC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -91,6 +93,14 @@
 				0910EE2D1D90244B00F3412B /* CourtsListView.swift */,
 			);
 			path = "Courts List";
+			sourceTree = "<group>";
+		};
+		0910EE2F1D904D2B00F3412B /* General */ = {
+			isa = PBXGroup;
+			children = (
+				0910EE301D904D7000F3412B /* AvatarView.swift */,
+			);
+			path = General;
 			sourceTree = "<group>";
 		};
 		095337021D8F6F99004260CD /* Data */ = {
@@ -176,6 +186,7 @@
 			children = (
 				09C92CCF1D81763900086EEC /* AppDelegate.swift */,
 				09E887AB1D869B1E00D3B1C4 /* MainWireframe.swift */,
+				0910EE2F1D904D2B00F3412B /* General */,
 				09E887A31D86974E00D3B1C4 /* Sign In */,
 				0910EE241D9023F200F3412B /* Courts List */,
 			);
@@ -379,6 +390,7 @@
 				0910EE2E1D90244B00F3412B /* CourtsListView.swift in Sources */,
 				09E887A91D86982D00D3B1C4 /* SignInUI.swift in Sources */,
 				0910EE181D901DDD00F3412B /* GoogleAuthenticationService.swift in Sources */,
+				0910EE311D904D7000F3412B /* AvatarView.swift in Sources */,
 				0910EE171D901DDD00F3412B /* FirebaseSignInService.swift in Sources */,
 				0910EE1C1D901DF100F3412B /* Authentication.swift in Sources */,
 				0910EE221D901DFC00F3412B /* SignInUseCase.swift in Sources */,
