@@ -8,20 +8,53 @@
 
 /* Begin PBXBuildFile section */
 		0908AFB01D8197FB00AA8EA0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0908AFAF1D8197FB00AA8EA0 /* GoogleService-Info.plist */; };
+		0910EE151D901DDD00F3412B /* AuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0910EE101D901DDD00F3412B /* AuthenticationService.swift */; };
+		0910EE161D901DDD00F3412B /* FirebaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0910EE111D901DDD00F3412B /* FirebaseService.swift */; };
+		0910EE171D901DDD00F3412B /* FirebaseSignInService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0910EE121D901DDD00F3412B /* FirebaseSignInService.swift */; };
+		0910EE181D901DDD00F3412B /* GoogleAuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0910EE131D901DDD00F3412B /* GoogleAuthenticationService.swift */; };
+		0910EE191D901DDD00F3412B /* SignInService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0910EE141D901DDD00F3412B /* SignInService.swift */; };
+		0910EE1C1D901DF100F3412B /* Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0910EE1A1D901DF100F3412B /* Authentication.swift */; };
+		0910EE1D1D901DF100F3412B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0910EE1B1D901DF100F3412B /* User.swift */; };
+		0910EE211D901DFC00F3412B /* IsUserSignedInUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0910EE1E1D901DFC00F3412B /* IsUserSignedInUseCase.swift */; };
+		0910EE221D901DFC00F3412B /* SignInUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0910EE1F1D901DFC00F3412B /* SignInUseCase.swift */; };
+		0910EE231D901DFC00F3412B /* UseCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0910EE201D901DFC00F3412B /* UseCases.swift */; };
 		09C92CD01D81763900086EEC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C92CCF1D81763900086EEC /* AppDelegate.swift */; };
 		09C92CD71D81763900086EEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09C92CD61D81763900086EEC /* Assets.xcassets */; };
 		09C92CDA1D81763900086EEC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09C92CD81D81763900086EEC /* LaunchScreen.storyboard */; };
+		09D2E1D31D900F5000A21F69 /* SignInPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D2E1D21D900F5000A21F69 /* SignInPresenter.swift */; };
+		09E887A51D86977700D3B1C4 /* SignInController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E887A41D86977700D3B1C4 /* SignInController.swift */; };
+		09E887A71D8697B900D3B1C4 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E887A61D8697B900D3B1C4 /* SignInView.swift */; };
+		09E887A91D86982D00D3B1C4 /* SignInUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E887A81D86982D00D3B1C4 /* SignInUI.swift */; };
+		09E887AC1D869B1E00D3B1C4 /* MainWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E887AB1D869B1E00D3B1C4 /* MainWireframe.swift */; };
+		09E887B41D86A61000D3B1C4 /* SignInWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E887B31D86A61000D3B1C4 /* SignInWireframe.swift */; };
 		C0D155131E9C9117BD5154D8 /* Pods_FirePadel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B382F7DFEDD42932B6255B7 /* Pods_FirePadel.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		002255EDBD1C4E870D43C15A /* Pods-FirePadel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirePadel.release.xcconfig"; path = "Pods/Target Support Files/Pods-FirePadel/Pods-FirePadel.release.xcconfig"; sourceTree = "<group>"; };
 		0908AFAF1D8197FB00AA8EA0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		0910EE101D901DDD00F3412B /* AuthenticationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationService.swift; sourceTree = "<group>"; };
+		0910EE111D901DDD00F3412B /* FirebaseService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseService.swift; sourceTree = "<group>"; };
+		0910EE121D901DDD00F3412B /* FirebaseSignInService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseSignInService.swift; sourceTree = "<group>"; };
+		0910EE131D901DDD00F3412B /* GoogleAuthenticationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleAuthenticationService.swift; sourceTree = "<group>"; };
+		0910EE141D901DDD00F3412B /* SignInService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInService.swift; sourceTree = "<group>"; };
+		0910EE1A1D901DF100F3412B /* Authentication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Authentication.swift; sourceTree = "<group>"; };
+		0910EE1B1D901DF100F3412B /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		0910EE1E1D901DFC00F3412B /* IsUserSignedInUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IsUserSignedInUseCase.swift; sourceTree = "<group>"; };
+		0910EE1F1D901DFC00F3412B /* SignInUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInUseCase.swift; sourceTree = "<group>"; };
+		0910EE201D901DFC00F3412B /* UseCases.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UseCases.swift; sourceTree = "<group>"; };
 		09C92CCC1D81763900086EEC /* FirePadel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirePadel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09C92CCF1D81763900086EEC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		09C92CD61D81763900086EEC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		09C92CD91D81763900086EEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		09C92CDB1D81763900086EEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09D2E1D21D900F5000A21F69 /* SignInPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInPresenter.swift; sourceTree = "<group>"; };
+		09E798A91D8A84E200E3CD62 /* FirePadel.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FirePadel.entitlements; sourceTree = "<group>"; };
+		09E887A41D86977700D3B1C4 /* SignInController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInController.swift; sourceTree = "<group>"; };
+		09E887A61D8697B900D3B1C4 /* SignInView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		09E887A81D86982D00D3B1C4 /* SignInUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInUI.swift; sourceTree = "<group>"; };
+		09E887AB1D869B1E00D3B1C4 /* MainWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainWireframe.swift; sourceTree = "<group>"; };
+		09E887B31D86A61000D3B1C4 /* SignInWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInWireframe.swift; sourceTree = "<group>"; };
 		1B382F7DFEDD42932B6255B7 /* Pods_FirePadel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FirePadel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F715189BF463F662DCFAD3BC /* Pods-FirePadel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirePadel.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FirePadel/Pods-FirePadel.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -38,13 +71,52 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		095337021D8F6F99004260CD /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		095337031D8F70B4004260CD /* Entitys */ = {
+			isa = PBXGroup;
+			children = (
+				0910EE1B1D901DF100F3412B /* User.swift */,
+				0910EE1A1D901DF100F3412B /* Authentication.swift */,
+			);
+			path = Entitys;
+			sourceTree = "<group>";
+		};
+		0991D9881D8E888E00510CCD /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				0910EE101D901DDD00F3412B /* AuthenticationService.swift */,
+				0910EE111D901DDD00F3412B /* FirebaseService.swift */,
+				0910EE121D901DDD00F3412B /* FirebaseSignInService.swift */,
+				0910EE131D901DDD00F3412B /* GoogleAuthenticationService.swift */,
+				0910EE141D901DDD00F3412B /* SignInService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		09ABC9701D878B9E001BC224 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				09E887A21D86973100D3B1C4 /* UI */,
+				09E887AD1D869BC700D3B1C4 /* Domain */,
+				095337021D8F6F99004260CD /* Data */,
+				0991D9881D8E888E00510CCD /* Services */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
 		09C92CC31D81763900086EEC = {
 			isa = PBXGroup;
 			children = (
 				09C92CCE1D81763900086EEC /* FirePadel */,
-				09C92CCD1D81763900086EEC /* Products */,
-				8226AB33A8E8FD102D320FD1 /* Pods */,
 				8E158B8342EB09D4DB7E7800 /* Frameworks */,
+				8226AB33A8E8FD102D320FD1 /* Pods */,
+				09C92CCD1D81763900086EEC /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,7 +131,7 @@
 		09C92CCE1D81763900086EEC /* FirePadel */ = {
 			isa = PBXGroup;
 			children = (
-				09C92CCF1D81763900086EEC /* AppDelegate.swift */,
+				09ABC9701D878B9E001BC224 /* Source */,
 				09C92CE11D81781600086EEC /* Resources */,
 			);
 			path = FirePadel;
@@ -69,11 +141,53 @@
 			isa = PBXGroup;
 			children = (
 				09C92CD61D81763900086EEC /* Assets.xcassets */,
-				09C92CD81D81763900086EEC /* LaunchScreen.storyboard */,
-				09C92CDB1D81763900086EEC /* Info.plist */,
+				09E798A91D8A84E200E3CD62 /* FirePadel.entitlements */,
 				0908AFAF1D8197FB00AA8EA0 /* GoogleService-Info.plist */,
+				09C92CDB1D81763900086EEC /* Info.plist */,
+				09C92CD81D81763900086EEC /* LaunchScreen.storyboard */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		09E887A21D86973100D3B1C4 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				09C92CCF1D81763900086EEC /* AppDelegate.swift */,
+				09E887AB1D869B1E00D3B1C4 /* MainWireframe.swift */,
+				09E887A31D86974E00D3B1C4 /* Sign In */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		09E887A31D86974E00D3B1C4 /* Sign In */ = {
+			isa = PBXGroup;
+			children = (
+				09E887B31D86A61000D3B1C4 /* SignInWireframe.swift */,
+				09D2E1D21D900F5000A21F69 /* SignInPresenter.swift */,
+				09E887A81D86982D00D3B1C4 /* SignInUI.swift */,
+				09E887A41D86977700D3B1C4 /* SignInController.swift */,
+				09E887A61D8697B900D3B1C4 /* SignInView.swift */,
+			);
+			path = "Sign In";
+			sourceTree = "<group>";
+		};
+		09E887AD1D869BC700D3B1C4 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				095337031D8F70B4004260CD /* Entitys */,
+				09E887AE1D869C3F00D3B1C4 /* Use Cases */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		09E887AE1D869C3F00D3B1C4 /* Use Cases */ = {
+			isa = PBXGroup;
+			children = (
+				0910EE201D901DFC00F3412B /* UseCases.swift */,
+				0910EE1E1D901DFC00F3412B /* IsUserSignedInUseCase.swift */,
+				0910EE1F1D901DFC00F3412B /* SignInUseCase.swift */,
+			);
+			path = "Use Cases";
 			sourceTree = "<group>";
 		};
 		8226AB33A8E8FD102D320FD1 /* Pods */ = {
@@ -129,7 +243,13 @@
 					09C92CCB1D81763900086EEC = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = DE2URN8PKZ;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -217,7 +337,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0910EE191D901DDD00F3412B /* SignInService.swift in Sources */,
+				09D2E1D31D900F5000A21F69 /* SignInPresenter.swift in Sources */,
+				0910EE231D901DFC00F3412B /* UseCases.swift in Sources */,
+				09E887AC1D869B1E00D3B1C4 /* MainWireframe.swift in Sources */,
+				0910EE161D901DDD00F3412B /* FirebaseService.swift in Sources */,
+				0910EE211D901DFC00F3412B /* IsUserSignedInUseCase.swift in Sources */,
+				09E887B41D86A61000D3B1C4 /* SignInWireframe.swift in Sources */,
+				0910EE1D1D901DF100F3412B /* User.swift in Sources */,
+				09E887A71D8697B900D3B1C4 /* SignInView.swift in Sources */,
 				09C92CD01D81763900086EEC /* AppDelegate.swift in Sources */,
+				09E887A51D86977700D3B1C4 /* SignInController.swift in Sources */,
+				0910EE151D901DDD00F3412B /* AuthenticationService.swift in Sources */,
+				09E887A91D86982D00D3B1C4 /* SignInUI.swift in Sources */,
+				0910EE181D901DDD00F3412B /* GoogleAuthenticationService.swift in Sources */,
+				0910EE171D901DDD00F3412B /* FirebaseSignInService.swift in Sources */,
+				0910EE1C1D901DF100F3412B /* Authentication.swift in Sources */,
+				0910EE221D901DFC00F3412B /* SignInUseCase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -335,13 +471,17 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F715189BF463F662DCFAD3BC /* Pods-FirePadel.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = FirePadel/Resources/FirePadel.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = DE2URN8PKZ;
 				INFOPLIST_FILE = FirePadel/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.firebasebarcelona.FirePadel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -350,7 +490,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 002255EDBD1C4E870D43C15A /* Pods-FirePadel.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = FirePadel/Resources/FirePadel.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = DE2URN8PKZ;
 				INFOPLIST_FILE = FirePadel/Resources/Info.plist;
