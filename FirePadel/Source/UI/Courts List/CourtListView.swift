@@ -1,6 +1,6 @@
 import UIKit
 
-final class CourtsListView: UIView {
+final class CourtListView: UIView {
     
     typealias CourtState = CourtCell.CourtState
     
@@ -46,7 +46,7 @@ final class CourtsListView: UIView {
     }
 }
 
-extension CourtsListView: UITableViewDataSource {
+extension CourtListView: UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
         return courts.count
     }

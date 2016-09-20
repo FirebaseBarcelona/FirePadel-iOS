@@ -9,7 +9,6 @@ final class SignInPresenter {
     init(ui: SignInUI, signInUseCase: @escaping UseCase.SignIn) {
         self.ui = ui
         self.signInUseCase = signInUseCase
-        self.ui.delegate = self
     }
 }
 
