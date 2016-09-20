@@ -7,7 +7,7 @@ final class CourtActionButtons: UIStackView {
     typealias ButtonAction = (Void) -> Void
     
     enum State {
-        case join, leaveOrChat
+        case join, leaveOrChat, none
     }
     
     static private let subviewSpacing: CGFloat = 8
@@ -88,9 +88,13 @@ final class CourtActionButtons: UIStackView {
             return state == .join
         }
         
+        let isLeaveOrChatState = observableState.asDriver().map { state in
+            return state == .leaveOrChat
+        }
+        
         isJoinState.map(!).drive(joinButton.rx.hidden).addDisposableTo(disposeBag)
-        isJoinState.drive(chatButton.rx.hidden).addDisposableTo(disposeBag)
-        isJoinState.drive(leaveButton.rx.hidden).addDisposableTo(disposeBag)
+        isLeaveOrChatState.map(!).drive(chatButton.rx.hidden).addDisposableTo(disposeBag)
+        isLeaveOrChatState.map(!).drive(leaveButton.rx.hidden).addDisposableTo(disposeBag)
     }
     
     private func setupButtonBindings() {

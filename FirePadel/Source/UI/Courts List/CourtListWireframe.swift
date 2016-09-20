@@ -1,7 +1,6 @@
 import UIKit
 
 final class CourtListWireframe {
-    private let getCourtsUseCase = GetCourtsUseCase()
     private let controller = CourtListController()
     private let presenter: CourtListPresenter
     
@@ -11,7 +10,10 @@ final class CourtListWireframe {
     
     init() {
         presenter = CourtListPresenter(ui: controller,
-                                       getCourtsUseCase: getCourtsUseCase)
+                                       getCourts: GetCourtsUseCase(),
+                                       isUserInCourt: IsUserInCourtUseCase(),
+                                       isUserInAnotherCourt: IsUserInAnotherCourtUseCase(),
+                                       isCourtFull: IsCourtFullUseCase())
         controller.delegate = presenter
     }
 }
