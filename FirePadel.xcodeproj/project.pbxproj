@@ -7,6 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0905D2A21D90603800551DF2 /* AvatarAndNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0905D2A11D90603800551DF2 /* AvatarAndNameView.swift */; };
+		0905D2A41D906F2600551DF2 /* PlayersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0905D2A31D906F2600551DF2 /* PlayersView.swift */; };
+		0905D2A91D91143200551DF2 /* CourtActionButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0905D2A81D91143200551DF2 /* CourtActionButtons.swift */; };
+		0905D2AB1D912B1400551DF2 /* CourtView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0905D2AA1D912B1400551DF2 /* CourtView.swift */; };
+		0905D2AD1D9135CC00551DF2 /* CourtCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0905D2AC1D9135CC00551DF2 /* CourtCell.swift */; };
+		0905D2AF1D91527200551DF2 /* Court.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0905D2AE1D91527200551DF2 /* Court.swift */; };
+		0905D2B11D91533E00551DF2 /* GetCourtsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0905D2B01D91533E00551DF2 /* GetCourtsUseCase.swift */; };
+		0905D2B31D915E9900551DF2 /* CourtRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0905D2B21D915E9900551DF2 /* CourtRepository.swift */; };
+		0905D2B51D915F3900551DF2 /* CourtFirebaseDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0905D2B41D915F3900551DF2 /* CourtFirebaseDataSource.swift */; };
+		0905D2B71D9170A100551DF2 /* FirebaseMapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0905D2B61D9170A100551DF2 /* FirebaseMapping.swift */; };
+		0905D2B91D917F9800551DF2 /* GetCurrentUserUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0905D2B81D917F9800551DF2 /* GetCurrentUserUseCase.swift */; };
+		0905D2BB1D9183ED00551DF2 /* IsUserInCourtUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0905D2BA1D9183ED00551DF2 /* IsUserInCourtUseCase.swift */; };
+		0905D2BD1D9186B600551DF2 /* IsUserInAnotherCourtUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0905D2BC1D9186B600551DF2 /* IsUserInAnotherCourtUseCase.swift */; };
+		0905D2BF1D9188A400551DF2 /* IsCourtFullUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0905D2BE1D9188A400551DF2 /* IsCourtFullUseCase.swift */; };
+		0905D2C11D918D5200551DF2 /* JoinCourtUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0905D2C01D918D5200551DF2 /* JoinCourtUseCase.swift */; };
+		0905D2C31D91DC6C00551DF2 /* LeaveCourtUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0905D2C21D91DC6C00551DF2 /* LeaveCourtUseCase.swift */; };
 		0908AFB01D8197FB00AA8EA0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0908AFAF1D8197FB00AA8EA0 /* GoogleService-Info.plist */; };
 		0910EE151D901DDD00F3412B /* AuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0910EE101D901DDD00F3412B /* AuthenticationService.swift */; };
 		0910EE161D901DDD00F3412B /* FirebaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0910EE111D901DDD00F3412B /* FirebaseService.swift */; };
@@ -18,6 +34,12 @@
 		0910EE211D901DFC00F3412B /* IsUserSignedInUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0910EE1E1D901DFC00F3412B /* IsUserSignedInUseCase.swift */; };
 		0910EE221D901DFC00F3412B /* SignInUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0910EE1F1D901DFC00F3412B /* SignInUseCase.swift */; };
 		0910EE231D901DFC00F3412B /* UseCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0910EE201D901DFC00F3412B /* UseCases.swift */; };
+		0910EE261D90241F00F3412B /* CourtListWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0910EE251D90241F00F3412B /* CourtListWireframe.swift */; };
+		0910EE281D90242B00F3412B /* CourtListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0910EE271D90242B00F3412B /* CourtListPresenter.swift */; };
+		0910EE2A1D90243400F3412B /* CourtListUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0910EE291D90243400F3412B /* CourtListUI.swift */; };
+		0910EE2C1D90243F00F3412B /* CourtListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0910EE2B1D90243F00F3412B /* CourtListController.swift */; };
+		0910EE2E1D90244B00F3412B /* CourtListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0910EE2D1D90244B00F3412B /* CourtListView.swift */; };
+		0910EE311D904D7000F3412B /* AvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0910EE301D904D7000F3412B /* AvatarView.swift */; };
 		09C92CD01D81763900086EEC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C92CCF1D81763900086EEC /* AppDelegate.swift */; };
 		09C92CD71D81763900086EEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09C92CD61D81763900086EEC /* Assets.xcassets */; };
 		09C92CDA1D81763900086EEC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09C92CD81D81763900086EEC /* LaunchScreen.storyboard */; };
@@ -32,6 +54,22 @@
 
 /* Begin PBXFileReference section */
 		002255EDBD1C4E870D43C15A /* Pods-FirePadel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirePadel.release.xcconfig"; path = "Pods/Target Support Files/Pods-FirePadel/Pods-FirePadel.release.xcconfig"; sourceTree = "<group>"; };
+		0905D2A11D90603800551DF2 /* AvatarAndNameView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvatarAndNameView.swift; sourceTree = "<group>"; };
+		0905D2A31D906F2600551DF2 /* PlayersView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayersView.swift; sourceTree = "<group>"; };
+		0905D2A81D91143200551DF2 /* CourtActionButtons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourtActionButtons.swift; sourceTree = "<group>"; };
+		0905D2AA1D912B1400551DF2 /* CourtView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourtView.swift; sourceTree = "<group>"; };
+		0905D2AC1D9135CC00551DF2 /* CourtCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourtCell.swift; sourceTree = "<group>"; };
+		0905D2AE1D91527200551DF2 /* Court.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Court.swift; sourceTree = "<group>"; };
+		0905D2B01D91533E00551DF2 /* GetCourtsUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetCourtsUseCase.swift; sourceTree = "<group>"; };
+		0905D2B21D915E9900551DF2 /* CourtRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourtRepository.swift; sourceTree = "<group>"; };
+		0905D2B41D915F3900551DF2 /* CourtFirebaseDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourtFirebaseDataSource.swift; sourceTree = "<group>"; };
+		0905D2B61D9170A100551DF2 /* FirebaseMapping.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseMapping.swift; sourceTree = "<group>"; };
+		0905D2B81D917F9800551DF2 /* GetCurrentUserUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetCurrentUserUseCase.swift; sourceTree = "<group>"; };
+		0905D2BA1D9183ED00551DF2 /* IsUserInCourtUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IsUserInCourtUseCase.swift; sourceTree = "<group>"; };
+		0905D2BC1D9186B600551DF2 /* IsUserInAnotherCourtUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IsUserInAnotherCourtUseCase.swift; sourceTree = "<group>"; };
+		0905D2BE1D9188A400551DF2 /* IsCourtFullUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IsCourtFullUseCase.swift; sourceTree = "<group>"; };
+		0905D2C01D918D5200551DF2 /* JoinCourtUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JoinCourtUseCase.swift; sourceTree = "<group>"; };
+		0905D2C21D91DC6C00551DF2 /* LeaveCourtUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeaveCourtUseCase.swift; sourceTree = "<group>"; };
 		0908AFAF1D8197FB00AA8EA0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0910EE101D901DDD00F3412B /* AuthenticationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationService.swift; sourceTree = "<group>"; };
 		0910EE111D901DDD00F3412B /* FirebaseService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseService.swift; sourceTree = "<group>"; };
@@ -43,6 +81,12 @@
 		0910EE1E1D901DFC00F3412B /* IsUserSignedInUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IsUserSignedInUseCase.swift; sourceTree = "<group>"; };
 		0910EE1F1D901DFC00F3412B /* SignInUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInUseCase.swift; sourceTree = "<group>"; };
 		0910EE201D901DFC00F3412B /* UseCases.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UseCases.swift; sourceTree = "<group>"; };
+		0910EE251D90241F00F3412B /* CourtListWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourtListWireframe.swift; sourceTree = "<group>"; };
+		0910EE271D90242B00F3412B /* CourtListPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourtListPresenter.swift; sourceTree = "<group>"; };
+		0910EE291D90243400F3412B /* CourtListUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourtListUI.swift; sourceTree = "<group>"; };
+		0910EE2B1D90243F00F3412B /* CourtListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourtListController.swift; sourceTree = "<group>"; };
+		0910EE2D1D90244B00F3412B /* CourtListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourtListView.swift; sourceTree = "<group>"; };
+		0910EE301D904D7000F3412B /* AvatarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvatarView.swift; sourceTree = "<group>"; };
 		09C92CCC1D81763900086EEC /* FirePadel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirePadel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09C92CCF1D81763900086EEC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		09C92CD61D81763900086EEC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -71,9 +115,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0910EE241D9023F200F3412B /* Court List */ = {
+			isa = PBXGroup;
+			children = (
+				0910EE251D90241F00F3412B /* CourtListWireframe.swift */,
+				0910EE271D90242B00F3412B /* CourtListPresenter.swift */,
+				0910EE291D90243400F3412B /* CourtListUI.swift */,
+				0910EE2B1D90243F00F3412B /* CourtListController.swift */,
+				0910EE2D1D90244B00F3412B /* CourtListView.swift */,
+				0905D2AC1D9135CC00551DF2 /* CourtCell.swift */,
+			);
+			name = "Court List";
+			path = "Courts List";
+			sourceTree = "<group>";
+		};
+		0910EE2F1D904D2B00F3412B /* General */ = {
+			isa = PBXGroup;
+			children = (
+				0910EE301D904D7000F3412B /* AvatarView.swift */,
+				0905D2A11D90603800551DF2 /* AvatarAndNameView.swift */,
+				0905D2A31D906F2600551DF2 /* PlayersView.swift */,
+				0905D2A81D91143200551DF2 /* CourtActionButtons.swift */,
+				0905D2AA1D912B1400551DF2 /* CourtView.swift */,
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
 		095337021D8F6F99004260CD /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				0905D2B21D915E9900551DF2 /* CourtRepository.swift */,
+				0905D2B41D915F3900551DF2 /* CourtFirebaseDataSource.swift */,
+				0905D2B61D9170A100551DF2 /* FirebaseMapping.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -83,6 +156,7 @@
 			children = (
 				0910EE1B1D901DF100F3412B /* User.swift */,
 				0910EE1A1D901DF100F3412B /* Authentication.swift */,
+				0905D2AE1D91527200551DF2 /* Court.swift */,
 			);
 			path = Entitys;
 			sourceTree = "<group>";
@@ -90,11 +164,11 @@
 		0991D9881D8E888E00510CCD /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				0910EE141D901DDD00F3412B /* SignInService.swift */,
 				0910EE101D901DDD00F3412B /* AuthenticationService.swift */,
 				0910EE111D901DDD00F3412B /* FirebaseService.swift */,
 				0910EE121D901DDD00F3412B /* FirebaseSignInService.swift */,
 				0910EE131D901DDD00F3412B /* GoogleAuthenticationService.swift */,
-				0910EE141D901DDD00F3412B /* SignInService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -154,7 +228,9 @@
 			children = (
 				09C92CCF1D81763900086EEC /* AppDelegate.swift */,
 				09E887AB1D869B1E00D3B1C4 /* MainWireframe.swift */,
+				0910EE2F1D904D2B00F3412B /* General */,
 				09E887A31D86974E00D3B1C4 /* Sign In */,
+				0910EE241D9023F200F3412B /* Court List */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -186,6 +262,13 @@
 				0910EE201D901DFC00F3412B /* UseCases.swift */,
 				0910EE1E1D901DFC00F3412B /* IsUserSignedInUseCase.swift */,
 				0910EE1F1D901DFC00F3412B /* SignInUseCase.swift */,
+				0905D2B81D917F9800551DF2 /* GetCurrentUserUseCase.swift */,
+				0905D2B01D91533E00551DF2 /* GetCourtsUseCase.swift */,
+				0905D2BA1D9183ED00551DF2 /* IsUserInCourtUseCase.swift */,
+				0905D2BC1D9186B600551DF2 /* IsUserInAnotherCourtUseCase.swift */,
+				0905D2BE1D9188A400551DF2 /* IsCourtFullUseCase.swift */,
+				0905D2C01D918D5200551DF2 /* JoinCourtUseCase.swift */,
+				0905D2C21D91DC6C00551DF2 /* LeaveCourtUseCase.swift */,
 			);
 			path = "Use Cases";
 			sourceTree = "<group>";
@@ -338,20 +421,42 @@
 			buildActionMask = 2147483647;
 			files = (
 				0910EE191D901DDD00F3412B /* SignInService.swift in Sources */,
+				0905D2BF1D9188A400551DF2 /* IsCourtFullUseCase.swift in Sources */,
+				0905D2C31D91DC6C00551DF2 /* LeaveCourtUseCase.swift in Sources */,
+				0910EE281D90242B00F3412B /* CourtListPresenter.swift in Sources */,
+				0905D2B11D91533E00551DF2 /* GetCourtsUseCase.swift in Sources */,
+				0910EE2C1D90243F00F3412B /* CourtListController.swift in Sources */,
 				09D2E1D31D900F5000A21F69 /* SignInPresenter.swift in Sources */,
 				0910EE231D901DFC00F3412B /* UseCases.swift in Sources */,
+				0905D2AB1D912B1400551DF2 /* CourtView.swift in Sources */,
+				0905D2A41D906F2600551DF2 /* PlayersView.swift in Sources */,
+				0905D2AF1D91527200551DF2 /* Court.swift in Sources */,
+				0905D2B71D9170A100551DF2 /* FirebaseMapping.swift in Sources */,
+				0905D2BB1D9183ED00551DF2 /* IsUserInCourtUseCase.swift in Sources */,
 				09E887AC1D869B1E00D3B1C4 /* MainWireframe.swift in Sources */,
 				0910EE161D901DDD00F3412B /* FirebaseService.swift in Sources */,
 				0910EE211D901DFC00F3412B /* IsUserSignedInUseCase.swift in Sources */,
+				0905D2A21D90603800551DF2 /* AvatarAndNameView.swift in Sources */,
+				0910EE261D90241F00F3412B /* CourtListWireframe.swift in Sources */,
 				09E887B41D86A61000D3B1C4 /* SignInWireframe.swift in Sources */,
 				0910EE1D1D901DF100F3412B /* User.swift in Sources */,
 				09E887A71D8697B900D3B1C4 /* SignInView.swift in Sources */,
+				0905D2B51D915F3900551DF2 /* CourtFirebaseDataSource.swift in Sources */,
+				0910EE2A1D90243400F3412B /* CourtListUI.swift in Sources */,
+				0905D2A91D91143200551DF2 /* CourtActionButtons.swift in Sources */,
 				09C92CD01D81763900086EEC /* AppDelegate.swift in Sources */,
 				09E887A51D86977700D3B1C4 /* SignInController.swift in Sources */,
+				0905D2C11D918D5200551DF2 /* JoinCourtUseCase.swift in Sources */,
 				0910EE151D901DDD00F3412B /* AuthenticationService.swift in Sources */,
+				0910EE2E1D90244B00F3412B /* CourtListView.swift in Sources */,
+				0905D2B91D917F9800551DF2 /* GetCurrentUserUseCase.swift in Sources */,
 				09E887A91D86982D00D3B1C4 /* SignInUI.swift in Sources */,
 				0910EE181D901DDD00F3412B /* GoogleAuthenticationService.swift in Sources */,
+				0905D2AD1D9135CC00551DF2 /* CourtCell.swift in Sources */,
+				0910EE311D904D7000F3412B /* AvatarView.swift in Sources */,
+				0905D2BD1D9186B600551DF2 /* IsUserInAnotherCourtUseCase.swift in Sources */,
 				0910EE171D901DDD00F3412B /* FirebaseSignInService.swift in Sources */,
+				0905D2B31D915E9900551DF2 /* CourtRepository.swift in Sources */,
 				0910EE1C1D901DF100F3412B /* Authentication.swift in Sources */,
 				0910EE221D901DFC00F3412B /* SignInUseCase.swift in Sources */,
 			);
