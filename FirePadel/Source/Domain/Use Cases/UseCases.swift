@@ -9,4 +9,6 @@ struct UseCase {
     typealias IsUserInCourt = (Court) -> Bool
     typealias IsUserInAnotherCourt = (Court, _ allCourts: [Court]) -> Bool
     typealias IsCourtFull = (Court) -> Bool
+    typealias JoinCourtUseCase = (Court) -> Void
+    typealias LeaveCourtUseCase = (Court) -> Void
 }

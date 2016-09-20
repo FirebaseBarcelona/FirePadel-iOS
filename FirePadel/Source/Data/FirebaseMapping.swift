@@ -45,4 +45,11 @@ extension User {
         self.email = email
         self.photoURL = photoURL
     }
+    
+    func toJSON() -> [String : Any] {
+        return ["uuid" : uid,
+                "name" : displayName,
+                "email" : email,
+                "avatar" : photoURL.absoluteString]
+    }
 }

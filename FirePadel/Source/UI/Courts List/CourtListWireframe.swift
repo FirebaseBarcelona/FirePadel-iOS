@@ -13,7 +13,8 @@ final class CourtListWireframe {
                                        getCourts: GetCourtsUseCase(),
                                        isUserInCourt: IsUserInCourtUseCase(),
                                        isUserInAnotherCourt: IsUserInAnotherCourtUseCase(),
-                                       isCourtFull: IsCourtFullUseCase())
+                                       isCourtFull: IsCourtFullUseCase(),
+                                       joinCourt: JoinCourtUseCase())
         controller.delegate = presenter
     }
 }

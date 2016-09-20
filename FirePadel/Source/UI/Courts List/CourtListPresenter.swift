@@ -7,18 +7,21 @@ final class CourtListPresenter {
     fileprivate let isUserInCourt: UseCase.IsUserInCourt
     fileprivate let isUserInAnotherCourt: UseCase.IsUserInAnotherCourt
     fileprivate let isCourtFull: UseCase.IsCourtFull
+    fileprivate let joinCourt: UseCase.JoinCourtUseCase
     fileprivate let disposeBag = DisposeBag()
     
     init(ui: CourtListUI,
          getCourts: @escaping UseCase.GetCourts,
          isUserInCourt: @escaping UseCase.IsUserInCourt,
          isUserInAnotherCourt: @escaping UseCase.IsUserInAnotherCourt,
-         isCourtFull: @escaping UseCase.IsCourtFull) {
+         isCourtFull: @escaping UseCase.IsCourtFull,
+         joinCourt: @escaping UseCase.JoinCourtUseCase) {
         self.ui = ui
         self.getCourts = getCourts
         self.isUserInCourt = isUserInCourt
         self.isUserInAnotherCourt = isUserInAnotherCourt
         self.isCourtFull = isCourtFull
+        self.joinCourt = joinCourt
         self.ui.delegate = self
     }
 }

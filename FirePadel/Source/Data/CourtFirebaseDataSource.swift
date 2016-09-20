@@ -4,6 +4,10 @@ import RxSwift
 
 final class CourtFirebaseDataSource: CourtRepository {
     static private let courtsChildPath = "courts"
+    static private let courtOneChildPath = "courts/court1"
+    static private let courtTwoChildPath = "courts/court2"
+    
+    private let databaseReference = FIRDatabase.database().reference()
     
     func getCourts() -> Observable<[Court]> {
         return Observable.create { observer in
@@ -25,7 +29,34 @@ final class CourtFirebaseDataSource: CourtRepository {
         }
     }
     
+    func join(user: User, to court: Court) {
+        let courtNode = self.getFirebaseNodeReference(court: court)
+        
+        let key = user.uid
+        let user = user.toJSON()
+        let update = ["users/\(key)": user]
+        
+        courtNode.updateChildValues(update)
+    }
+    
     private func getFirebaseDatabaseReference() -> FIRDatabaseReference {
-        return FIRDatabase.database().reference().child(CourtFirebaseDataSource.courtsChildPath)
+        return databaseReference.child(CourtFirebaseDataSource.courtsChildPath)
+    }
+    
+    private func getFirebaseNodeReference(court: Court) -> FIRDatabaseReference {
+        let courtPath = databasePath(court: court)
+        return getFirebaseNodeReference(path: courtPath)
+    }
+    
+    private func databasePath(court: Court) -> String {
+        if court.id == 1 {
+            return CourtFirebaseDataSource.courtOneChildPath
+        } else {
+            return CourtFirebaseDataSource.courtTwoChildPath
+        }
+    }
+    
+    private func getFirebaseNodeReference(path: String) -> FIRDatabaseReference {
+        return databaseReference.child(path)
     }
 }
