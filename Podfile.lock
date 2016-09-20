@@ -4,6 +4,9 @@ PODS:
   - Firebase/Auth (3.6.0):
     - Firebase/Analytics
     - FirebaseAuth (= 3.0.5)
+  - Firebase/Database (3.6.0):
+    - Firebase/Analytics
+    - FirebaseDatabase (= 3.0.3)
   - FirebaseAnalytics (3.4.2):
     - FirebaseInstanceID (~> 1.0)
     - GoogleInterchangeUtilities (~> 1.2)
@@ -13,6 +16,8 @@ PODS:
     - FirebaseAnalytics (~> 3.3)
     - GoogleNetworkingUtilities (~> 1.2)
     - GoogleUtilities (~> 1.2)
+  - FirebaseDatabase (3.0.3):
+    - FirebaseAnalytics (~> 3.3)
   - FirebaseInstanceID (1.0.8)
   - GoogleAppUtilities (1.1.1):
     - GoogleSymbolUtilities (~> 1.0)
@@ -38,6 +43,7 @@ PODS:
 
 DEPENDENCIES:
   - Firebase/Auth
+  - Firebase/Database
   - GoogleSignIn
   - HanekeSwift (from `https://github.com/Haneke/HanekeSwift.git`, branch `feature/swift-3`)
   - RxCocoa (from `https://github.com/ReactiveX/RxSwift.git`, branch `develop`)
@@ -69,6 +75,7 @@ SPEC CHECKSUMS:
   Firebase: 34187200ef4979dbd485c7aa685ef078bf587c86
   FirebaseAnalytics: 3f5358d9104adf159cc8d99b7b501e50099a39ad
   FirebaseAuth: 75a062bbf2d3c97d1e6e55bbc110e13a6853e25d
+  FirebaseDatabase: 750a4a0fe18ef114318876fd654b2d9c671e0992
   FirebaseInstanceID: ba1e640935235e5fac39dfa816fe7660e72e1a8a
   GoogleAppUtilities: f1730f91f67767b453c289577040dd3f425ffdc7
   GoogleAuthUtilities: d7a19615cd7627688afcf181737f1011ee8b5a23
@@ -81,6 +88,6 @@ SPEC CHECKSUMS:
   RxCocoa: 8cecf331302b8ae5381bbab1bccba4ede2eae6a8
   RxSwift: '0823e8d7969c23bfa9ddfb2afa4881e424a1a710'
 
-PODFILE CHECKSUM: e65d1d5d524c16b83ea4730fdc5d5516a1806083
+PODFILE CHECKSUM: 8951863ba5f2e5471e0160758e7d13a513aac11d
 
 COCOAPODS: 1.1.0.beta.2
