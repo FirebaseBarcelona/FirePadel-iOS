@@ -8,4 +8,5 @@ struct UseCase {
     typealias GetCourts = () -> Observable<[Court]>
     typealias IsUserInCourt = (Court) -> Bool
     typealias IsUserInAnotherCourt = (Court, _ allCourts: [Court]) -> Bool
+    typealias IsCourtFull = (Court) -> Bool
 }

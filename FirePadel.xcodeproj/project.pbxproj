@@ -20,6 +20,7 @@
 		0905D2B91D917F9800551DF2 /* GetCurrentUserUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0905D2B81D917F9800551DF2 /* GetCurrentUserUseCase.swift */; };
 		0905D2BB1D9183ED00551DF2 /* IsUserInCourtUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0905D2BA1D9183ED00551DF2 /* IsUserInCourtUseCase.swift */; };
 		0905D2BD1D9186B600551DF2 /* IsUserInAnotherCourtUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0905D2BC1D9186B600551DF2 /* IsUserInAnotherCourtUseCase.swift */; };
+		0905D2BF1D9188A400551DF2 /* IsCourtFullUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0905D2BE1D9188A400551DF2 /* IsCourtFullUseCase.swift */; };
 		0908AFB01D8197FB00AA8EA0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0908AFAF1D8197FB00AA8EA0 /* GoogleService-Info.plist */; };
 		0910EE151D901DDD00F3412B /* AuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0910EE101D901DDD00F3412B /* AuthenticationService.swift */; };
 		0910EE161D901DDD00F3412B /* FirebaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0910EE111D901DDD00F3412B /* FirebaseService.swift */; };
@@ -64,6 +65,7 @@
 		0905D2B81D917F9800551DF2 /* GetCurrentUserUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetCurrentUserUseCase.swift; sourceTree = "<group>"; };
 		0905D2BA1D9183ED00551DF2 /* IsUserInCourtUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IsUserInCourtUseCase.swift; sourceTree = "<group>"; };
 		0905D2BC1D9186B600551DF2 /* IsUserInAnotherCourtUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IsUserInAnotherCourtUseCase.swift; sourceTree = "<group>"; };
+		0905D2BE1D9188A400551DF2 /* IsCourtFullUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IsCourtFullUseCase.swift; sourceTree = "<group>"; };
 		0908AFAF1D8197FB00AA8EA0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0910EE101D901DDD00F3412B /* AuthenticationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationService.swift; sourceTree = "<group>"; };
 		0910EE111D901DDD00F3412B /* FirebaseService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseService.swift; sourceTree = "<group>"; };
@@ -260,6 +262,7 @@
 				0905D2B01D91533E00551DF2 /* GetCourtsUseCase.swift */,
 				0905D2BA1D9183ED00551DF2 /* IsUserInCourtUseCase.swift */,
 				0905D2BC1D9186B600551DF2 /* IsUserInAnotherCourtUseCase.swift */,
+				0905D2BE1D9188A400551DF2 /* IsCourtFullUseCase.swift */,
 			);
 			path = "Use Cases";
 			sourceTree = "<group>";
@@ -412,6 +415,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0910EE191D901DDD00F3412B /* SignInService.swift in Sources */,
+				0905D2BF1D9188A400551DF2 /* IsCourtFullUseCase.swift in Sources */,
 				0910EE281D90242B00F3412B /* CourtListPresenter.swift in Sources */,
 				0905D2B11D91533E00551DF2 /* GetCourtsUseCase.swift in Sources */,
 				0910EE2C1D90243F00F3412B /* CourtListController.swift in Sources */,
