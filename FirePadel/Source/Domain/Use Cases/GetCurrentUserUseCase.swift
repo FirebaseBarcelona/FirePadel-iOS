@@ -1,5 +1,5 @@
 import Foundation
 
-func GetCurrentUserUseCase(signInService: SignInService) -> UseCase.GetCurrentUser {
+func GetCurrentUserUseCase(signInService: SignInService = FirebaseSignInService()) -> UseCase.GetCurrentUser {
     return signInService.currentUser
 }
