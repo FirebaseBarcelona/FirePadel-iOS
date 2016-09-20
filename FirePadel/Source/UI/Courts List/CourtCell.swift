@@ -2,12 +2,41 @@ import UIKit
 
 final class CourtCell: UITableViewCell {
     
+    typealias ButtonAction = (Void) -> Void
+    
     typealias CourtState = CourtView.CourtState
     static let cellIdentifier = "CourtCell"
 
     var courtState = CourtState(players: [], actionButtonsState: .join) {
         didSet {
             courtView.courtState = courtState
+        }
+    }
+    
+    var joinButtonAction: ButtonAction? {
+        get {
+            return courtView.joinButtonAction
+        }
+        set {
+            courtView.joinButtonAction = newValue
+        }
+    }
+    
+    var leaveButtonAction: ButtonAction? {
+        get {
+            return courtView.leaveButtonAction
+        }
+        set {
+            courtView.leaveButtonAction = newValue
+        }
+    }
+    
+    var chatButtonAction: ButtonAction? {
+        get {
+            return courtView.chatButtonAction
+        }
+        set {
+            courtView.chatButtonAction = newValue
         }
     }
     
@@ -18,6 +47,8 @@ final class CourtCell: UITableViewCell {
         return courtView
     }()
     
+    // MARK: Initilization
+    
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         setup()
@@ -26,6 +57,8 @@ final class CourtCell: UITableViewCell {
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+    
+    // MARK: View setup
     
     private func setup() {
         contentView.addSubview(courtView)

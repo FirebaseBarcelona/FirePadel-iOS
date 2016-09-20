@@ -32,7 +32,11 @@ final class CourtListController: UIViewController, CourtListUI {
     // MARK: - View Lifecycle
     
     override func loadView() {
-        view = CourtListView()
+        let courtListView = CourtListView()
+        courtListView.joinButtonAction = delegate?.joinAction
+        courtListView.leaveButtonAction = delegate?.leaveAction
+        courtListView.chatButtonAction = delegate?.chatAction
+        view = courtListView
     }
     
     override func viewDidLoad() {

@@ -9,6 +9,8 @@ final class CourtListPresenter {
     fileprivate let isCourtFull: UseCase.IsCourtFull
     fileprivate let joinCourt: UseCase.JoinCourtUseCase
     fileprivate let leaveCourt: UseCase.LeaveCourtUseCase
+    
+    fileprivate let courts = Variable([Court]())
     fileprivate let disposeBag = DisposeBag()
     
     init(ui: CourtListUI,
@@ -30,7 +32,9 @@ final class CourtListPresenter {
 
 extension CourtListPresenter: CourtListUIDelegate {
     func viewLoaded() {
-        getCourts().map { courts -> [CourtState] in
+        let courts = getCourts().share()
+        
+        courts.map { courts -> [CourtState] in
             return courts.map { court in
                 let players = court.players.map { user in
                     return PlayersView.Player(name: user.displayName ,avatarURL: user.photoURL)
@@ -57,5 +61,21 @@ extension CourtListPresenter: CourtListUIDelegate {
             }
             self.ui.courts = courts
         }.addDisposableTo(disposeBag)
+        
+        courts.bindTo(self.courts).addDisposableTo(disposeBag)
+    }
+    
+    func joinAction(forCourtAt index: Int) {
+        let court = courts.value[index]
+        joinCourt(court)
+    }
+    
+    func leaveAction(forCourtAt index: Int) {
+        let court = courts.value[index]
+        leaveCourt(court)
+    }
+    
+    func chatAction(forCourtAt index: Int) {
+        print("CHAT")
     }
 }

@@ -2,6 +2,7 @@ import UIKit
 
 final class CourtListView: UIView {
     
+    typealias ButtonAction = (Int) -> Void
     typealias CourtState = CourtCell.CourtState
     
     var courts = [CourtState]() {
@@ -9,6 +10,10 @@ final class CourtListView: UIView {
             tableView.reloadData()
         }
     }
+    
+    var joinButtonAction: ButtonAction?
+    var leaveButtonAction: ButtonAction?
+    var chatButtonAction: ButtonAction?
     
     private let tableView: UITableView = {
         let tableView = UITableView(frame: .zero, style: .grouped)
@@ -57,9 +62,22 @@ extension CourtListView: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: CourtCell.cellIdentifier, for: indexPath)
+        
         if let courtCell = cell as? CourtCell {
+            
+            courtCell.joinButtonAction = { [weak self] in
+                self?.joinButtonAction?(indexPath.section)
+            }
+            courtCell.leaveButtonAction = { [weak self] in
+                self?.leaveButtonAction?(indexPath.section)
+            }
+            courtCell.chatButtonAction = { [weak self] in
+                self?.chatButtonAction?(indexPath.section)
+            }
+            
             courtCell.courtState = courts[indexPath.section]
         }
+        
         return cell
     }
 }
