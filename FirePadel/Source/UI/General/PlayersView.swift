@@ -58,8 +58,6 @@ final class PlayersView: UIStackView {
     }
     
     private func removeOldAvatarAndNameViews() {
-        avatarAndNameViews.forEach { view in
-            removeArrangedSubview(view)
-        }
+        avatarAndNameViews.forEach { $0.removeFromSuperview() }
     }
 }
