@@ -14,7 +14,8 @@ final class CourtListWireframe {
                                        isUserInCourt: IsUserInCourtUseCase(),
                                        isUserInAnotherCourt: IsUserInAnotherCourtUseCase(),
                                        isCourtFull: IsCourtFullUseCase(),
-                                       joinCourt: JoinCourtUseCase())
+                                       joinCourt: JoinCourtUseCase(),
+                                       leaveCourt: LeaveCourtUseCase())
         controller.delegate = presenter
     }
 }

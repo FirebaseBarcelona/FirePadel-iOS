@@ -31,12 +31,16 @@ final class CourtFirebaseDataSource: CourtRepository {
     
     func join(user: User, to court: Court) {
         let courtNode = self.getFirebaseNodeReference(court: court)
-        
         let key = user.uid
         let user = user.toJSON()
         let update = ["users/\(key)": user]
-        
         courtNode.updateChildValues(update)
+    }
+    
+    func leave(user: User, from court: Court) {
+        let courtNode = self.getFirebaseNodeReference(court: court)
+        let key = user.uid
+        courtNode.child("users/\(key)").removeValue()
     }
     
     private func getFirebaseDatabaseReference() -> FIRDatabaseReference {

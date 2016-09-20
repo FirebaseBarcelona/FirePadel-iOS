@@ -8,6 +8,7 @@ final class CourtListPresenter {
     fileprivate let isUserInAnotherCourt: UseCase.IsUserInAnotherCourt
     fileprivate let isCourtFull: UseCase.IsCourtFull
     fileprivate let joinCourt: UseCase.JoinCourtUseCase
+    fileprivate let leaveCourt: UseCase.LeaveCourtUseCase
     fileprivate let disposeBag = DisposeBag()
     
     init(ui: CourtListUI,
@@ -15,14 +16,15 @@ final class CourtListPresenter {
          isUserInCourt: @escaping UseCase.IsUserInCourt,
          isUserInAnotherCourt: @escaping UseCase.IsUserInAnotherCourt,
          isCourtFull: @escaping UseCase.IsCourtFull,
-         joinCourt: @escaping UseCase.JoinCourtUseCase) {
+         joinCourt: @escaping UseCase.JoinCourtUseCase,
+         leaveCourt: @escaping UseCase.LeaveCourtUseCase) {
         self.ui = ui
         self.getCourts = getCourts
         self.isUserInCourt = isUserInCourt
         self.isUserInAnotherCourt = isUserInAnotherCourt
         self.isCourtFull = isCourtFull
         self.joinCourt = joinCourt
-        self.ui.delegate = self
+        self.leaveCourt = leaveCourt
     }
 }
 
@@ -39,8 +41,8 @@ extension CourtListPresenter: CourtListUIDelegate {
                         return .leaveOrChat
                     } else if self.isUserInAnotherCourt(court, courts) {
                         return .none
-//                    } else if self.isCourtFull(court) {
-//                        return .none
+                    } else if self.isCourtFull(court) {
+                        return .none
                     } else {
                         return .join
                     }
