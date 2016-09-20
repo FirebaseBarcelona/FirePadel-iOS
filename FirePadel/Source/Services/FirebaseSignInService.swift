@@ -3,8 +3,16 @@ import Firebase
 import RxSwift
 
 final class FirebaseSignInService: SignInService {
+    
     func isUserSignedIn() -> Bool {
         return FIRAuth.auth()?.currentUser != nil
+    }
+    
+    func currentUser() -> User? {
+        guard let firebaseUser = FIRAuth.auth()?.currentUser else {
+            return nil
+        }
+        return User(from: firebaseUser)
     }
     
     func signIn(with authentication: Authentication) -> Observable<User> {
