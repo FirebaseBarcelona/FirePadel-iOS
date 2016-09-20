@@ -32,6 +32,8 @@ final class CourtsListView: UIView {
     private func setup() {
         addSubview(tableView)
         tableView.register(CourtCell.self, forCellReuseIdentifier: CourtCell.cellIdentifier)
+        tableView.estimatedRowHeight = 80
+        tableView.rowHeight = UITableViewAutomaticDimension
         tableView.dataSource = self
         setupConstraints()
     }
