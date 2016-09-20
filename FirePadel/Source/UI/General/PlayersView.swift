@@ -2,16 +2,25 @@ import UIKit
 
 final class PlayersView: UIStackView {
     
+    struct Player {
+        let name: String
+        let avatarURL: URL
+    }
+    
     static private let subviewSpacing: CGFloat = 8
 
-    private let avatarAndNameViews: [AvatarAndNameView]
+    private var avatarAndNameViews = [AvatarAndNameView]()
+    
+    var players: [Player] {
+        didSet {
+            updateAvatarAndNameViews()
+        }
+    }
     
     // MARK: Initialization
     
     init(players: [Player]) {
-        avatarAndNameViews = players.map { player in
-            return AvatarAndNameView(name: player.name, avatarURL: player.avatarURL)
-        }
+        self.players = players
         super.init(frame: .zero)
         setup()
     }
@@ -23,11 +32,15 @@ final class PlayersView: UIStackView {
     // MARK: View setup
     
     private func setup() {
-        addSubviews()
+        setupAvatarAndNameViews()
         configureLayout()
     }
     
-    private func addSubviews() {
+    private func setupAvatarAndNameViews() {
+        avatarAndNameViews = players.map { player in
+            return AvatarAndNameView(name: player.name, avatarURL: player.avatarURL)
+        }
+        
         avatarAndNameViews.forEach { view in
             addArrangedSubview(view)
         }
@@ -39,8 +52,14 @@ final class PlayersView: UIStackView {
         spacing = PlayersView.subviewSpacing
     }
     
-    struct Player {
-        let name: String
-        let avatarURL: URL
+    private func updateAvatarAndNameViews() {
+        removeOldAvatarAndNameViews()
+        setupAvatarAndNameViews()
+    }
+    
+    private func removeOldAvatarAndNameViews() {
+        avatarAndNameViews.forEach { view in
+            removeArrangedSubview(view)
+        }
     }
 }
