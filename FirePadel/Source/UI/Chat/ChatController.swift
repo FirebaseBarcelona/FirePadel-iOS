@@ -29,6 +29,11 @@ final class ChatController: JSQMessagesViewController, ChatUI {
         delegate?.viewLoaded()
     }
     
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        collectionView?.contentInset.top = topLayoutGuide.length
+    }
+    
     // MARK: - JSQMessagesViewController
     
     override func didPressSend(_ button: UIButton,

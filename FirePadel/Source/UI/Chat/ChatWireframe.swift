@@ -8,14 +8,14 @@ final class ChatWireframe {
         return controller
     }
     
-    init() {
+    init(courtId: Int) {
         let getCurrentUser = GetCurrentUserUseCase()
         let user = getCurrentUser()
         
         controller.userUid = user?.uid
         controller.userDisplayName = user?.displayName
         
-        presenter = ChatPresenter(courtId: 2,
+        presenter = ChatPresenter(courtId: courtId,
                                   ui: controller,
                                   getMessages: GetMessagesForCourtWithIdUseCase(),
                                   sendMessage: SendMessageToCourtWithIdUseCase())

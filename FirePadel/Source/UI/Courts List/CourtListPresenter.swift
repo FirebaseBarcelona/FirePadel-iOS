@@ -92,6 +92,6 @@ extension CourtListPresenter: CourtListUIDelegate {
     }
     
     func chatAction(forCourtAt index: Int) {
-        delegate?.presentChatUI(forCourtId: index)
+        delegate?.presentChatUI(forCourtId: index + 1)
     }
 }

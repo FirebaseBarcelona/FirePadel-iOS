@@ -1,6 +1,6 @@
 import UIKit
 
-final class CourtListWireframe {
+final class CourtListWireframe: NSObject {
     fileprivate let navController: UINavigationController
     fileprivate let controller = CourtListController()
     fileprivate let presenter: CourtListPresenter
@@ -24,7 +24,9 @@ final class CourtListWireframe {
                                        joinCourt: JoinCourtUseCase(),
                                        leaveCourt: LeaveCourtUseCase())
         controller.delegate = presenter
-        self.navController = UINavigationController(rootViewController: controller)
+        navController = UINavigationController(rootViewController: controller)
+        super.init()
+        navController.delegate = self
         presenter.delegate = self
     }
 }
@@ -38,7 +40,9 @@ extension CourtListWireframe: CourtListPresenterDelegate {
     }
     
     func presentChatUI(forCourtId id: Int) {
-        
+        let chatWireframe = ChatWireframe(courtId: id)
+        self.chatWireframe = chatWireframe
+        navController.pushViewController(chatWireframe.rootController, animated: true)
     }
 }
 
@@ -46,6 +50,16 @@ extension CourtListWireframe: SignInWireframeDelegate {
     func signInUINeedsToBeDissmissed() {
         navController.dismiss(animated: true) { [weak self] in
             self?.signInWireframe = nil
+        }
+    }
+}
+
+extension CourtListWireframe: UINavigationControllerDelegate {
+    func navigationController(_ navigationController: UINavigationController,
+                              didShow viewController: UIViewController,
+                              animated: Bool) {
+        if viewController == controller {
+            chatWireframe = nil
         }
     }
 }
