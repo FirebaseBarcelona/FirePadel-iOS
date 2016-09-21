@@ -23,6 +23,7 @@ final class CourtListController: UIViewController, CourtListUI {
     
     init() {
         super.init(nibName: nil, bundle: nil)
+        title = "FirePadel"
     }
     
     required init?(coder aDecoder: NSCoder) {

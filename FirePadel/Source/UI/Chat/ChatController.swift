@@ -26,6 +26,7 @@ final class ChatController: JSQMessagesViewController, ChatUI {
     override func viewDidLoad() {
         super.viewDidLoad()
         inputToolbar.contentView?.leftBarButtonItem = nil
+        title = "Chat"
         delegate?.viewLoaded()
     }
     
