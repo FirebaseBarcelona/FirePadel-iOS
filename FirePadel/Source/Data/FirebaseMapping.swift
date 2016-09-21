@@ -53,3 +53,29 @@ extension User {
                 "avatar" : photoURL.absoluteString]
     }
 }
+
+extension Message {
+    static func array(from json:[String : AnyObject]) -> [Message] {
+        return json.values.flatMap { message in
+            guard let json = message as? [String : AnyObject] else {
+                return nil
+            }
+            return Message(from: json)
+        }
+    }
+    
+    init?(from json: [String : AnyObject]) {
+        guard let text = json["message"] as? String,
+            let userName = json["name"] as? String,
+            let userUid = json["uuid"] as? String,
+            let avatar = json["avatar"] as? String,
+            let userAvatar = URL(string: avatar) else {
+                return nil
+        }
+        
+        self.text = text
+        self.userName = userName
+        self.userUid = userUid
+        self.userAvatar = userAvatar
+    }
+}

@@ -11,4 +11,5 @@ struct UseCase {
     typealias IsCourtFull = (Court) -> Bool
     typealias JoinCourtUseCase = (Court) -> Void
     typealias LeaveCourtUseCase = (Court) -> Void
+    typealias GetMessagesForCourtWithId = (Int) -> (Observable<[Message]>, Observable<Message>)
 }
