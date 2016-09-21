@@ -23,6 +23,16 @@
 		0905D2BF1D9188A400551DF2 /* IsCourtFullUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0905D2BE1D9188A400551DF2 /* IsCourtFullUseCase.swift */; };
 		0905D2C11D918D5200551DF2 /* JoinCourtUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0905D2C01D918D5200551DF2 /* JoinCourtUseCase.swift */; };
 		0905D2C31D91DC6C00551DF2 /* LeaveCourtUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0905D2C21D91DC6C00551DF2 /* LeaveCourtUseCase.swift */; };
+		0905D2C61D91F25500551DF2 /* ChatController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0905D2C51D91F25500551DF2 /* ChatController.swift */; };
+		0905D2C81D923F0700551DF2 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0905D2C71D923F0700551DF2 /* Message.swift */; };
+		0905D2CA1D924A4200551DF2 /* ChatWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0905D2C91D924A4200551DF2 /* ChatWireframe.swift */; };
+		0905D2CC1D924A4D00551DF2 /* ChatPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0905D2CB1D924A4D00551DF2 /* ChatPresenter.swift */; };
+		0905D2CE1D924A5C00551DF2 /* ChatUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0905D2CD1D924A5C00551DF2 /* ChatUI.swift */; };
+		0905D2D01D924EF200551DF2 /* GetMessagesForCourtWithIdUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0905D2CF1D924EF200551DF2 /* GetMessagesForCourtWithIdUseCase.swift */; };
+		0905D2D21D924F1800551DF2 /* MessageRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0905D2D11D924F1800551DF2 /* MessageRepository.swift */; };
+		0905D2D41D924FC100551DF2 /* MessageFirebaseDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0905D2D31D924FC100551DF2 /* MessageFirebaseDataSource.swift */; };
+		0905D2D61D925AD100551DF2 /* FirebaseDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0905D2D51D925AD100551DF2 /* FirebaseDataSource.swift */; };
+		0905D2D81D92727B00551DF2 /* ChatMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0905D2D71D92727B00551DF2 /* ChatMessage.swift */; };
 		0908AFB01D8197FB00AA8EA0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0908AFAF1D8197FB00AA8EA0 /* GoogleService-Info.plist */; };
 		0910EE151D901DDD00F3412B /* AuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0910EE101D901DDD00F3412B /* AuthenticationService.swift */; };
 		0910EE161D901DDD00F3412B /* FirebaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0910EE111D901DDD00F3412B /* FirebaseService.swift */; };
@@ -40,6 +50,7 @@
 		0910EE2C1D90243F00F3412B /* CourtListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0910EE2B1D90243F00F3412B /* CourtListController.swift */; };
 		0910EE2E1D90244B00F3412B /* CourtListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0910EE2D1D90244B00F3412B /* CourtListView.swift */; };
 		0910EE311D904D7000F3412B /* AvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0910EE301D904D7000F3412B /* AvatarView.swift */; };
+		0931E4721D92902B00403E77 /* SendMessageToCourtWithIdUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0931E4711D92902B00403E77 /* SendMessageToCourtWithIdUseCase.swift */; };
 		09C92CD01D81763900086EEC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C92CCF1D81763900086EEC /* AppDelegate.swift */; };
 		09C92CD71D81763900086EEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09C92CD61D81763900086EEC /* Assets.xcassets */; };
 		09C92CDA1D81763900086EEC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09C92CD81D81763900086EEC /* LaunchScreen.storyboard */; };
@@ -70,6 +81,16 @@
 		0905D2BE1D9188A400551DF2 /* IsCourtFullUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IsCourtFullUseCase.swift; sourceTree = "<group>"; };
 		0905D2C01D918D5200551DF2 /* JoinCourtUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JoinCourtUseCase.swift; sourceTree = "<group>"; };
 		0905D2C21D91DC6C00551DF2 /* LeaveCourtUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeaveCourtUseCase.swift; sourceTree = "<group>"; };
+		0905D2C51D91F25500551DF2 /* ChatController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatController.swift; sourceTree = "<group>"; };
+		0905D2C71D923F0700551DF2 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		0905D2C91D924A4200551DF2 /* ChatWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatWireframe.swift; sourceTree = "<group>"; };
+		0905D2CB1D924A4D00551DF2 /* ChatPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatPresenter.swift; sourceTree = "<group>"; };
+		0905D2CD1D924A5C00551DF2 /* ChatUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatUI.swift; sourceTree = "<group>"; };
+		0905D2CF1D924EF200551DF2 /* GetMessagesForCourtWithIdUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetMessagesForCourtWithIdUseCase.swift; sourceTree = "<group>"; };
+		0905D2D11D924F1800551DF2 /* MessageRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageRepository.swift; sourceTree = "<group>"; };
+		0905D2D31D924FC100551DF2 /* MessageFirebaseDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageFirebaseDataSource.swift; sourceTree = "<group>"; };
+		0905D2D51D925AD100551DF2 /* FirebaseDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseDataSource.swift; sourceTree = "<group>"; };
+		0905D2D71D92727B00551DF2 /* ChatMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatMessage.swift; sourceTree = "<group>"; };
 		0908AFAF1D8197FB00AA8EA0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0910EE101D901DDD00F3412B /* AuthenticationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationService.swift; sourceTree = "<group>"; };
 		0910EE111D901DDD00F3412B /* FirebaseService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseService.swift; sourceTree = "<group>"; };
@@ -87,6 +108,7 @@
 		0910EE2B1D90243F00F3412B /* CourtListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourtListController.swift; sourceTree = "<group>"; };
 		0910EE2D1D90244B00F3412B /* CourtListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourtListView.swift; sourceTree = "<group>"; };
 		0910EE301D904D7000F3412B /* AvatarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvatarView.swift; sourceTree = "<group>"; };
+		0931E4711D92902B00403E77 /* SendMessageToCourtWithIdUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendMessageToCourtWithIdUseCase.swift; sourceTree = "<group>"; };
 		09C92CCC1D81763900086EEC /* FirePadel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirePadel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09C92CCF1D81763900086EEC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		09C92CD61D81763900086EEC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -115,6 +137,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0905D2C41D91F23500551DF2 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				0905D2C91D924A4200551DF2 /* ChatWireframe.swift */,
+				0905D2CB1D924A4D00551DF2 /* ChatPresenter.swift */,
+				0905D2CD1D924A5C00551DF2 /* ChatUI.swift */,
+				0905D2D71D92727B00551DF2 /* ChatMessage.swift */,
+				0905D2C51D91F25500551DF2 /* ChatController.swift */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
 		0910EE241D9023F200F3412B /* Court List */ = {
 			isa = PBXGroup;
 			children = (
@@ -145,7 +179,10 @@
 			isa = PBXGroup;
 			children = (
 				0905D2B21D915E9900551DF2 /* CourtRepository.swift */,
+				0905D2D11D924F1800551DF2 /* MessageRepository.swift */,
+				0905D2D51D925AD100551DF2 /* FirebaseDataSource.swift */,
 				0905D2B41D915F3900551DF2 /* CourtFirebaseDataSource.swift */,
+				0905D2D31D924FC100551DF2 /* MessageFirebaseDataSource.swift */,
 				0905D2B61D9170A100551DF2 /* FirebaseMapping.swift */,
 			);
 			path = Data;
@@ -157,6 +194,7 @@
 				0910EE1B1D901DF100F3412B /* User.swift */,
 				0910EE1A1D901DF100F3412B /* Authentication.swift */,
 				0905D2AE1D91527200551DF2 /* Court.swift */,
+				0905D2C71D923F0700551DF2 /* Message.swift */,
 			);
 			path = Entitys;
 			sourceTree = "<group>";
@@ -231,6 +269,7 @@
 				0910EE2F1D904D2B00F3412B /* General */,
 				09E887A31D86974E00D3B1C4 /* Sign In */,
 				0910EE241D9023F200F3412B /* Court List */,
+				0905D2C41D91F23500551DF2 /* Chat */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -269,6 +308,8 @@
 				0905D2BE1D9188A400551DF2 /* IsCourtFullUseCase.swift */,
 				0905D2C01D918D5200551DF2 /* JoinCourtUseCase.swift */,
 				0905D2C21D91DC6C00551DF2 /* LeaveCourtUseCase.swift */,
+				0905D2CF1D924EF200551DF2 /* GetMessagesForCourtWithIdUseCase.swift */,
+				0931E4711D92902B00403E77 /* SendMessageToCourtWithIdUseCase.swift */,
 			);
 			path = "Use Cases";
 			sourceTree = "<group>";
@@ -422,7 +463,12 @@
 			files = (
 				0910EE191D901DDD00F3412B /* SignInService.swift in Sources */,
 				0905D2BF1D9188A400551DF2 /* IsCourtFullUseCase.swift in Sources */,
+				0905D2CA1D924A4200551DF2 /* ChatWireframe.swift in Sources */,
+				0905D2D41D924FC100551DF2 /* MessageFirebaseDataSource.swift in Sources */,
+				0905D2CC1D924A4D00551DF2 /* ChatPresenter.swift in Sources */,
 				0905D2C31D91DC6C00551DF2 /* LeaveCourtUseCase.swift in Sources */,
+				0905D2C61D91F25500551DF2 /* ChatController.swift in Sources */,
+				0905D2D81D92727B00551DF2 /* ChatMessage.swift in Sources */,
 				0910EE281D90242B00F3412B /* CourtListPresenter.swift in Sources */,
 				0905D2B11D91533E00551DF2 /* GetCourtsUseCase.swift in Sources */,
 				0910EE2C1D90243F00F3412B /* CourtListController.swift in Sources */,
@@ -430,25 +476,31 @@
 				0910EE231D901DFC00F3412B /* UseCases.swift in Sources */,
 				0905D2AB1D912B1400551DF2 /* CourtView.swift in Sources */,
 				0905D2A41D906F2600551DF2 /* PlayersView.swift in Sources */,
+				0931E4721D92902B00403E77 /* SendMessageToCourtWithIdUseCase.swift in Sources */,
 				0905D2AF1D91527200551DF2 /* Court.swift in Sources */,
 				0905D2B71D9170A100551DF2 /* FirebaseMapping.swift in Sources */,
 				0905D2BB1D9183ED00551DF2 /* IsUserInCourtUseCase.swift in Sources */,
 				09E887AC1D869B1E00D3B1C4 /* MainWireframe.swift in Sources */,
+				0905D2D21D924F1800551DF2 /* MessageRepository.swift in Sources */,
 				0910EE161D901DDD00F3412B /* FirebaseService.swift in Sources */,
 				0910EE211D901DFC00F3412B /* IsUserSignedInUseCase.swift in Sources */,
+				0905D2D01D924EF200551DF2 /* GetMessagesForCourtWithIdUseCase.swift in Sources */,
 				0905D2A21D90603800551DF2 /* AvatarAndNameView.swift in Sources */,
 				0910EE261D90241F00F3412B /* CourtListWireframe.swift in Sources */,
+				0905D2C81D923F0700551DF2 /* Message.swift in Sources */,
 				09E887B41D86A61000D3B1C4 /* SignInWireframe.swift in Sources */,
 				0910EE1D1D901DF100F3412B /* User.swift in Sources */,
 				09E887A71D8697B900D3B1C4 /* SignInView.swift in Sources */,
 				0905D2B51D915F3900551DF2 /* CourtFirebaseDataSource.swift in Sources */,
 				0910EE2A1D90243400F3412B /* CourtListUI.swift in Sources */,
 				0905D2A91D91143200551DF2 /* CourtActionButtons.swift in Sources */,
+				0905D2D61D925AD100551DF2 /* FirebaseDataSource.swift in Sources */,
 				09C92CD01D81763900086EEC /* AppDelegate.swift in Sources */,
 				09E887A51D86977700D3B1C4 /* SignInController.swift in Sources */,
 				0905D2C11D918D5200551DF2 /* JoinCourtUseCase.swift in Sources */,
 				0910EE151D901DDD00F3412B /* AuthenticationService.swift in Sources */,
 				0910EE2E1D90244B00F3412B /* CourtListView.swift in Sources */,
+				0905D2CE1D924A5C00551DF2 /* ChatUI.swift in Sources */,
 				0905D2B91D917F9800551DF2 /* GetCurrentUserUseCase.swift in Sources */,
 				09E887A91D86982D00D3B1C4 /* SignInUI.swift in Sources */,
 				0910EE181D901DDD00F3412B /* GoogleAuthenticationService.swift in Sources */,

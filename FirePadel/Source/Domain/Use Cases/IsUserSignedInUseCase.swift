@@ -1,5 +1,5 @@
 import Foundation
 
-func IsUserSignedInUseCase(signInService: SignInService) -> UseCase.IsUserSignedIn {
+func IsUserSignedInUseCase(signInService: SignInService = FirebaseSignInService()) -> UseCase.IsUserSignedIn {
     return signInService.isUserSignedIn
 }
