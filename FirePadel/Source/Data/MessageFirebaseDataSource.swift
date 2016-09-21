@@ -37,4 +37,9 @@ final class MessageFirebaseDataSource: MessageRepository {
         
         return (current, new)
     }
+    
+    func send(message: Message, toCourtId id: Int) {
+        let messagesNode = FirebaseDataSource.getMessagedNodeReference(forCourtId: id)
+        messagesNode.childByAutoId().setValue(message.toJSON())
+    }
 }

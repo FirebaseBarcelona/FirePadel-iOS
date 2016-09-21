@@ -17,7 +17,8 @@ final class ChatWireframe {
         
         presenter = ChatPresenter(courtId: 2,
                                   ui: controller,
-                                  getMessages: GetMessagesForCourtWithIdUseCase())
+                                  getMessages: GetMessagesForCourtWithIdUseCase(),
+                                  sendMessage: SendMessageToCourtWithIdUseCase())
         controller.delegate = presenter
     }
 }

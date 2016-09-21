@@ -5,13 +5,18 @@ import JSQMessagesViewController
 final class ChatPresenter {
     fileprivate let ui: ChatUI
     fileprivate let getMessages: UseCase.GetMessagesForCourtWithId
+    fileprivate let sendMessage: UseCase.SendMessageToCourtWithId
     fileprivate let courtId: Int
     fileprivate let disposeBag = DisposeBag()
     
-    init(courtId: Int, ui: ChatUI, getMessages: @escaping UseCase.GetMessagesForCourtWithId) {
+    init(courtId: Int,
+         ui: ChatUI,
+         getMessages: @escaping UseCase.GetMessagesForCourtWithId,
+         sendMessage: @escaping UseCase.SendMessageToCourtWithId) {
         self.courtId = courtId
         self.ui = ui
         self.getMessages = getMessages
+        self.sendMessage = sendMessage
     }
 }
 
@@ -39,6 +44,6 @@ extension ChatPresenter: ChatUIDelegate {
     }
     
     func sendMessage(message: String) {
-        print(message)
+        sendMessage(message, courtId)
     }
 }

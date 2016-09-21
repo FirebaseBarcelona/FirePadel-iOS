@@ -78,4 +78,11 @@ extension Message {
         self.userUid = userUid
         self.userAvatar = userAvatar
     }
+    
+    func toJSON() -> [String : Any] {
+        return ["message" : text,
+                "name" : userName,
+                "uuid" : userUid,
+                "avatar" : userAvatar.absoluteString]
+    }
 }
