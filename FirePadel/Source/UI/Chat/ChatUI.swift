@@ -9,4 +9,5 @@ protocol ChatUI: class {
 
 protocol ChatUIDelegate: class {
     func viewLoaded()
+    func sendMessage(message: String)
 }

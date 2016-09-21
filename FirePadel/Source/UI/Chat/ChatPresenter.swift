@@ -37,4 +37,8 @@ extension ChatPresenter: ChatUIDelegate {
             self?.ui.add(message: chatMessage)
         }.addDisposableTo(disposeBag)
     }
+    
+    func sendMessage(message: String) {
+        print(message)
+    }
 }
