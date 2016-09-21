@@ -9,6 +9,7 @@ protocol CourtListUI: class {
 
 protocol CourtListUIDelegate: class {
     func viewLoaded()
+    func viewAppeared()
     func joinAction(forCourtAt index: Int)
     func leaveAction(forCourtAt index: Int)
     func chatAction(forCourtAt index: Int)

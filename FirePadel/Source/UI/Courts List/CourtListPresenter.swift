@@ -1,8 +1,16 @@
 import Foundation
 import RxSwift
 
+protocol CourtListPresenterDelegate: class {
+    func presentSignInUI()
+    func presentChatUI(forCourtId id: Int)
+}
+
 final class CourtListPresenter {
+    weak var delegate: CourtListPresenterDelegate?
+    
     fileprivate let ui: CourtListUI
+    fileprivate let isUserSignedIn: UseCase.IsUserSignedIn
     fileprivate let getCourts: UseCase.GetCourts
     fileprivate let isUserInCourt: UseCase.IsUserInCourt
     fileprivate let isUserInAnotherCourt: UseCase.IsUserInAnotherCourt
@@ -14,6 +22,7 @@ final class CourtListPresenter {
     fileprivate let disposeBag = DisposeBag()
     
     init(ui: CourtListUI,
+         isUserSignedIn: @escaping UseCase.IsUserSignedIn,
          getCourts: @escaping UseCase.GetCourts,
          isUserInCourt: @escaping UseCase.IsUserInCourt,
          isUserInAnotherCourt: @escaping UseCase.IsUserInAnotherCourt,
@@ -21,6 +30,7 @@ final class CourtListPresenter {
          joinCourt: @escaping UseCase.JoinCourtUseCase,
          leaveCourt: @escaping UseCase.LeaveCourtUseCase) {
         self.ui = ui
+        self.isUserSignedIn = isUserSignedIn
         self.getCourts = getCourts
         self.isUserInCourt = isUserInCourt
         self.isUserInAnotherCourt = isUserInAnotherCourt
@@ -65,6 +75,12 @@ extension CourtListPresenter: CourtListUIDelegate {
         courts.bindTo(self.courts).addDisposableTo(disposeBag)
     }
     
+    func viewAppeared() {
+        if !isUserSignedIn() {
+            delegate?.presentSignInUI()
+        }
+    }
+    
     func joinAction(forCourtAt index: Int) {
         let court = courts.value[index]
         joinCourt(court)
@@ -76,6 +92,6 @@ extension CourtListPresenter: CourtListUIDelegate {
     }
     
     func chatAction(forCourtAt index: Int) {
-        print("CHAT")
+        delegate?.presentChatUI(forCourtId: index)
     }
 }

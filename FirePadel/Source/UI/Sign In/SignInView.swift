@@ -23,6 +23,7 @@ class SignInView: UIView {
     // MARK: - View setup
     
     private func setup() {
+        backgroundColor = UIColor.white
         addSubview(signInButton)
         setupConstraints()
     }

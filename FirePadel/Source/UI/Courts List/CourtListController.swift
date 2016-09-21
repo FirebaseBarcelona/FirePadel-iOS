@@ -43,4 +43,9 @@ final class CourtListController: UIViewController, CourtListUI {
         super.viewDidLoad()
         delegate?.viewLoaded()
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        delegate?.viewAppeared()
+    }
 }
