@@ -92,9 +92,9 @@ final class CourtActionButtons: UIStackView {
             return state == .leaveOrChat
         }
         
-        isJoinState.map(!).drive(joinButton.rx.hidden).addDisposableTo(disposeBag)
-        isLeaveOrChatState.map(!).drive(chatButton.rx.hidden).addDisposableTo(disposeBag)
-        isLeaveOrChatState.map(!).drive(leaveButton.rx.hidden).addDisposableTo(disposeBag)
+        isJoinState.map(!).drive(joinButton.rx.isHidden).addDisposableTo(disposeBag)
+        isLeaveOrChatState.map(!).drive(chatButton.rx.isHidden).addDisposableTo(disposeBag)
+        isLeaveOrChatState.map(!).drive(leaveButton.rx.isHidden).addDisposableTo(disposeBag)
     }
     
     private func setupButtonBindings() {
