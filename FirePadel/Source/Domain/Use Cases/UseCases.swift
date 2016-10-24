@@ -1,7 +1,7 @@
 import Foundation
 import RxSwift
 
-struct UseCase {
+enum UseCase {
     typealias IsUserSignedIn = () -> Bool
     typealias SignIn = () -> Observable<User>
     typealias GetCurrentUser = () -> User?
