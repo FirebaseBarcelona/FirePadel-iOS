@@ -3,12 +3,10 @@ import FirebaseDatabase
 
 final class FirebaseDataSource {
     static private let courtsPath = "courts"
-    static private let courtOnePath = "courts/court1"
-    static private let courtTwoPath = "courts/court2"
     
     static let databaseReference = FIRDatabase.database().reference()
     
-    static func getCourtsNodeReference() -> FIRDatabaseReference {
+    static func getCourtsNodeReference() -> FIRDatabaseQuery {
         return getNodeReference(path: courtsPath)
     }
     
@@ -23,11 +21,7 @@ final class FirebaseDataSource {
     }
     
     static private func databasePath(courtId id: Int) -> String {
-        if id == 1 {
-            return FirebaseDataSource.courtOnePath
-        } else {
-            return FirebaseDataSource.courtTwoPath
-        }
+        return FirebaseDataSource.courtsPath + "/court\(id)"
     }
     
     static private func messagesDatabasePath(courtId id: Int) -> String {

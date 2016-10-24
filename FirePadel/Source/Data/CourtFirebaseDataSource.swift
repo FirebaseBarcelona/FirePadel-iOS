@@ -8,11 +8,12 @@ final class CourtFirebaseDataSource: CourtRepository {
             let database = FirebaseDataSource.getCourtsNodeReference()
             
             let handle = database.observe(.value, with: { snapshot in
-                guard let json = snapshot.value as? [String : AnyObject] else {
-                    return
+                let courts: [Court] = snapshot.children.allObjects.flatMap { childSnapshot in
+                    guard let courtJson = (childSnapshot as? FIRDataSnapshot)?.value as? [String : AnyObject] else {
+                        return nil
+                    }
+                    return Court(from: courtJson)
                 }
-                
-                let courts: [Court] = Court.array(from: json)
                 
                 observer.onNext(courts)
             })
