@@ -9,6 +9,8 @@ final class CourtView: UIStackView {
         let actionButtonsState: CourtActionButtons.State
     }
     
+    private static let contentMargin: CGFloat = 8
+    
     private let playersView: PlayersView
     private let actionButtons = CourtActionButtons()
     
@@ -73,8 +75,14 @@ final class CourtView: UIStackView {
     }
     
     private func configureLayout() {
-        translatesAutoresizingMaskIntoConstraints = false
         distribution = .equalSpacing
         alignment = .bottom
+        isLayoutMarginsRelativeArrangement = true
+        translatesAutoresizingMaskIntoConstraints = false
+        let margin = CourtView.contentMargin
+        layoutMargins = UIEdgeInsets(top: margin,
+                                     left: margin,
+                                     bottom: margin,
+                                     right: margin)
     }
 }
